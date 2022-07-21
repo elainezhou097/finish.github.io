@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Calligraffitti">
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+	<title>Tools&Tips</title>
+
+	<style type="text/css">
+		.backgroundRec{
+			padding-left: 5em;
+            padding-right: 5em;
+		}
+		ul {
+		 	list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            
+        }
+
+       li {
+           float: right;
+           
+       }
+
+       li a {
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+      }
+
+        li a:hover:not(.active) {
+           background-color: grey;
+
+      }
+
+       .active {
+           background-color: #8A9A5B;
+      }
+      
+	</style>
+</head>
+<body>
+	<ul>
+  <li style="float:left; font-family: Calligraffitti;color: #FFFF8F; font-size: 30px;"><b>Recipe of Traditional Food</b></li>
+  
+  <li><a href="Videos.html">All videos</a></li>
+  <li><a class="active" href="Tools&Tips.html">Tools&Tips</a></li>
+  <li><a href="Chefs.html">Chefs</a></li>
+  <li><a href="About Us.html">About Us</a></li>
+  <li><a href="Recipes.html">Recipes</a></li>
+  <li><a href="index.html">Home</a></li>
+  
+   </ul>
+
+   <div class="backgroundRec">
+   	<h1 style="color: #8A9A5B;">Tools & Tips</h1>
+     <h3>The 8 Best Crêpe Makers And Pans of 2022</h3>
+     <p id='a1' style="font-size: 18px; line-height: 1.5;"> </p>
+     <p id='b1' style="color: #CF9FFF;"></p>
+     
+     <br>
+     <h3>The Best Food Choppers Of 2022</h3>
+     <p id="a2" style="font-size: 18px; line-height: 1.5;">
+     </p>
+
+     <p id="b2" style="color: #CF9FFF;"></p>
+
+     
+     <br>
+     <h3>The 8 Best Steak Knives Of 2022</h3>
+
+     <p id="a3" style="font-size: 18px; line-height: 1.5;">
+     </p>
+
+     <p id="b3" style="color: #CF9FFF;"></p>
+
+     <script>
+        const content1={
+            des1:'Whether you’re a basic crêpe specialist or a buttermilk crêpe groupie, chances are you want a special pan to perfect your recipe To really boost your breakfast game, check out our recommendations for the best waffle irons.' ,
+            recom1:'<b>Best Crêpe Pan: Lodge 10.5-Inch Cast-Iron Griddle<br><br> Best Electric Crêpe Maker: CucinaPro Electric Crêpe Maker<br><br> Best Budget Crêpe Maker: Chefman 12-Inch Electric Crêpe Maker<br><br> Best Splurge Crêpe Maker: Le Creuset Enameled Cast-Iron Crêpe Pan<br><br> Best Crêpe Pan for Beginners: Cuisinart Chef Classic Crêpe Pan<br><br> Easiest to Clean Crêpe Pan: Le Creuset Toughened Nonstick Crêpe Pan<br><br> Best Electric Crêpe Maker For A Crowd: Proctor Silex Electric Crêpe Maker<br><br> Best Portable Crêpe Maker: de Buyer Crêpe Pan</b>'
+        }
+
+        const content2={
+            des2:'We love cooking (obviously), but we are always looking for tools that help cut down on prep time. Dicing vegetables can be meditative, sure, but what if you are in a rush—or if chopping a mountain of onions makes you weep buckets Whether you are whipping up the ultimate jalapeñospiked salsa, garlicky bruschetta, hearty beef goulash, or creamy sour cream and onion dip, a good food chopper can make life a whole lot easier.',
+            recom2:'<b>1.Kuhn Rikon Pull Chopper<br><br> 2.Hamilton Beach 3-Cup Mini Food Processor & Vegetable <br><br>  3. Chopper Zyliss Easy Pull Food Chopper<br><br>4. Zyliss Zick Food Chopper<br><br> 5. OXO Good Grips Chopper</b>'
+        }
+
+        const content3={
+            des3:'You wll never lack recipe ideas when it comes to grilling steak. But in order to thoroughly enjoy it, you need a great set of steak knives. We did some research and rounded up the best ones',
+            recom3:'<b> 1.Zwilling Four Star Steak Knife Set<br><br>  2.Wüsthof Classic 4-Piece Steak Knife Set <br><br>     3. Victorinox Swiss Classic Serrated Steak Knife Set<br><br>       4. Henckels Stainless Steel Serrated Steak Knife Set<br><br> 5. Viking Steakhouse Pakka 6-Piece Wood Steak Knife Set </b>'
+
+        }
+         document.getElementById("a1").innerHTML =content1.des1;
+         document.getElementById("b1").innerHTML =content1.recom1;
+         document.getElementById("a2").innerHTML =content2.des2;
+         document.getElementById("b2").innerHTML =content2.recom2;
+         document.getElementById("a3").innerHTML =content3.des3;
+         document.getElementById("b3").innerHTML =content3.recom3;
+
+     </script>
+     
+     <br><br><br>
+
+   </div>
+
+</body>
+</html>

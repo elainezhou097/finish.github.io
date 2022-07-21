@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Timer</title>
+<style type="text/css">
+    .button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1{
+          background-color: black;
+        }
+body{
+      
+            padding-left: 5em;
+            padding-right: 5em;
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:history.back()" style="font-size:20px"> &laquo;Go Back To Recipe</a>
+ <h2>
+  Please enter the time:<br>
+  HOUR: <input type="text" id="hr" value="0"><br>
+  MINUTE: <input type="text" id="min" value="0"><br>
+  SECOND: <input type="text" id="th" value="0"><br><br>
+  <button type="button" onclick="main()" class="button button1">Timer Start</button>
+  
+  <p id="tx"><p></h2 >
+ </p >
+
+ <script>
+  
+  var a;
+  
+  var timeVar;
+  function main()
+  {
+   a=hr.value*60000*60+min.value*60000+th.value*1000;
+   
+   timeVar=setInterval(function(){time()},1000);
+  }
+  
+  function time()
+  {
+   t=(a%60000)/1000;
+   m=((a-t*1000)%(60000*60))/(1000*60);
+   h=(a-t*1000-m*60000)/(1000*60*60);
+  
+   if(a>=0){
+    document.getElementById("tx").innerHTML = "REMAINING TIME"+h+"HOUR"+m+"MINUTE"+t+"SECOND";
+    console.log(a);
+    
+    a=a-1000;
+   }else{
+    document.getElementById("tx").innerHTML = "END";
+    showTimeOver();
+    
+    clearInterval(timeVar);
+   }
+  }
+  
+  function showTimeOver()
+  {
+      alert("Timer ends");
+  }
+ </script>
+</body>
+</html>
